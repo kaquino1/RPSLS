@@ -1,4 +1,4 @@
-const weapons = ['ROCK', 'PAPER', 'SCISSORS', 'SPOCK', 'LIZARD'];
+const choices = ['ROCK', 'PAPER', 'SCISSORS', 'SPOCK', 'LIZARD'];
 const icons = [
     "./images/hand-rock",
     "./images/hand-paper",
@@ -26,8 +26,8 @@ const shoot = () => {
     player1_symbol.append(icon1);
     player2_symbol.append(icon2);
 
-    label1.append(weapons[player1_indx]);
-    label2.append(weapons[player2_indx]);
+    label1.append(choices[player1_indx]);
+    label2.append(choices[player2_indx]);
 
     findWinner(player1_indx, player2_indx);
 };
