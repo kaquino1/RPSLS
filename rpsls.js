@@ -58,3 +58,15 @@ const refresh = () => {
 document.addEventListener('DOMContentLoaded', (e) => {
     shoot();
 });
+
+const openModal = () => {
+    var target = document.getElementById('rules');
+    document.body.classList.add('is-clipped');
+    target.classList.add('is-active');
+};
+
+const closeModal = () => {
+    document.body.classList.remove('is-clipped');
+    var target = document.getElementById('rules');
+    target.classList.remove('is-active');
+};
