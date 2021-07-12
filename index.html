@@ -20,6 +20,7 @@
             <p class="title is-3">
                 Rock, Paper, Scissors, Lizard, Spock
             </p>
+            <a onclick="openModal()">Rules</a>
         </div>
     </section>
     <div class="container pt-5">
@@ -44,9 +45,55 @@
             <button class="button is-dark" onclick="refresh()">GO!</button>
         </div>
 
+        <div id="rules" class="modal">
+            <div class="modal-background" onclick="closeModal()"></div>
+            <div class="modal-content">
+                <div class="box has-text-centered">
+                    <div class="columns is-gapless">
+                        <div class="column">
+                            <p>Scissor</p>
+                            <p>Paper</p>
+                            <p>Rock</p>
+                            <p>Lizard</p>
+                            <p>Spock</p>
+                            <p>Scissors</p>
+                            <p>Lizard</p>
+                            <p>Paper</p>
+                            <p>Spock</p>
+                            <p>Rock</p>
+                        </div>
+                        <div class="column">
+                            <p>CUTS</p>
+                            <p>COVERS</p>
+                            <p>CRUSHES</p>
+                            <p>POISONS</p>
+                            <p>SMASHES</p>
+                            <p>DECAPITATES</p>
+                            <p>EATS</p>
+                            <p>DISPROVES</p>
+                            <p>VAPORIZES</p>
+                            <p>CRUSHES</p>
+                        </div>
+                        <div class="column">
+                            <p>Paper</p>
+                            <p>Rock</p>
+                            <p>Lizard</p>
+                            <p>Spock</p>
+                            <p>Scissors</p>
+                            <p>Lizard</p>
+                            <p>Paper</p>
+                            <p>Spock</p>
+                            <p>Rock</p>
+                            <p>Scissors</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button onclick="closeModal()" class="modal-close is-large" aria-label="close"></button>
+        </div>
 
 
-        <script src="rpsls.js"></script>
+        <script src="rpls.js"></script>
 </body>
 
 </html>
